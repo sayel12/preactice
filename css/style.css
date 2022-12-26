@@ -1,0 +1,547 @@
+
+/* COMMON CSS START */
+*{
+margin: 0;
+padding: 0;
+outline: 0;
+box-sizing: border-box;
+
+}
+
+.container{
+    width: 1180px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* COMMON CSS end */
+
+/* nav css start */
+
+nav{
+    background-color: #252e30;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+nav div.logo{
+    width: 15%;
+}
+
+nav div.menu{
+    width: 80%;
+}
+
+nav div ul.row{
+    justify-content: flex-end;
+}
+
+nav div.row{
+    align-items: center;
+}
+
+nav div .menu ul li a{
+    padding: 29px 19px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+nav div .menu ul li a:hover{
+    color: #2ecc71;
+}
+/* nav css end */
+
+
+/* banner start */
+
+#banner{
+    background-image: url(../img/banner.jpg);
+    width: 100%;
+    height: 1000px;
+    text-align: center;
+}
+
+#banner .container h1{
+    font-size: 60px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+#banner .container a{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 20px 34px;
+    border: 1px solid #ffffff;
+    display:inline-block;
+    margin-top: 50px;
+}
+
+#banner .container img{
+    display: block;
+    margin: auto;
+}
+
+#banner .container{
+    margin: auto;
+}
+
+
+/* banner end */
+/* extra start */
+
+#extra .item{
+    width: 33.33333333333333%;
+}
+
+#extra .item h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #566366;
+    padding-top: 99px;
+}
+#extra .item p{
+    font-size: 18px;
+    color: #919191;
+    padding-top: 50px;
+    padding-bottom: 96px;
+ 
+
+}
+/* extra end */
+
+/* about us start */
+
+
+#about .about_img{
+    width: 38.125%;
+    position: relative;
+}
+
+#about .about_content{
+    width: 61.875%;
+}
+
+#about .about_img img{
+    display: block;
+    width: 100%;
+}
+
+#about .about_img img:last-child{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    opacity: 0;
+    transition: 0.6s;
+    visibility: hidden;
+    transform: scale(0);
+    transform-origin: left top;
+}
+
+
+#about .about_img:hover img:last-child{
+    opacity: 2;
+    visibility:visible;
+    transform: scale(1);
+}
+
+.about_content{
+    background-color: #f1f1f1;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+#about .section_2 .info{
+    width: 50%;
+    padding-top: 20px;
+}
+
+
+#about .section_2 .info .icon{
+    width: 15%;
+}
+
+
+#about .section_2 .info .icon_info{
+    width: 80%;
+}
+
+
+#about .section_1 h2{
+    font-weight: 700;
+    font-size: 30px;
+    color: #566366;
+    text-transform: uppercase;
+}
+
+
+#about .section_1 p,
+#about .section_2 .info p{
+    font-size: 18px;
+    color: #919191;
+}
+
+
+
+#about .section_2 .info h3{
+    font-size: 22px;
+    font-weight: 700;
+    color: #566366;
+    padding-bottom: 28px;
+    text-transform: uppercase;
+}
+
+/* about us end  */
+/* my skills start */
+
+#my_skills .info,
+#my_skills .item{
+    width: 50%;
+}
+
+#my_skills{
+    padding: 100px 0;
+}
+
+
+#my_skills .info h2{
+    font-size: 30px;
+    color: #566366;
+    text-transform: uppercase;
+}
+
+
+#my_skills .info p{
+    font-size: 18px;
+    color: #919191;
+    padding-top: 48px;
+    padding-bottom: 46px;
+}
+
+
+#my_skills .info a{
+    font-size: 18px;
+    font-weight: 700;
+    color: #2ecc71;
+    border: 2px solid  #2ecc71;
+    padding: 20px 35px;
+    display: inline-block;
+}
+
+
+#my_skills .item .item_info .white {
+    background: #f1f1f1;
+    width: 560px;
+}
+
+
+#my_skills .item .item_info{
+    padding-top: 40px;
+}
+
+#my_skills .item .item_info .white p{
+    text-align: end;
+    padding: 10px;
+    color: #ffff;
+    font-weight: 700;
+    font-size: 22px;
+}
+#my_skills .item .item_info .green_1{
+    background: #2ecc71;
+    width: 90%;
+}
+
+#my_skills .item .item_info .green_2{
+    background: #2ecc71;
+    width: 80%;
+}
+
+
+    
+#my_skills .item .item_info .green_3{
+    background: #2ecc71;
+    width: 90%;
+}
+
+    
+#my_skills .item .item_info .green_4{
+    background: #2ecc71;
+    width: 70%;
+}
+
+
+
+#my_skills .item .item_info h2{
+    font-size: 22px;
+    font-weight: 700;
+    color: #566366;
+}
+
+
+/* my skills end */
+
+/* resume start */
+#resume{
+    background-color: #f1f1f1;
+    position: relative;
+}
+
+#resume::after{
+    position: absolute;
+    content: '';
+    left: 47%;
+    border-top: 42px solid #f1f1f1;
+    border-bottom:  42px solid transparent;
+    border-left:  42px solid transparent;
+    border-right:  42px solid transparent;
+}
+
+#resume .item{
+    text-align: center;
+    margin: 0 290px;
+    padding: 100px 0;
+}
+
+#resume .item h2{
+    font-size: 30px;
+    color: #566366;
+    text-transform: uppercase;
+}
+#resume .item p{
+    font-size: 18px;
+    color: #919191;
+    padding: 50px 0;
+}
+#resume .item a{
+    font-size: 18px;
+    font-weight: 700;
+    color: #2ecc71;
+    border: 2px solid #2ecc71;
+    padding: 19px;
+    text-transform: uppercase;
+}
+
+/* resume end */
+/* my education start */
+#education .row{
+    padding: 100px 0;
+    border-bottom: 2px solid #919191;
+}
+
+#education .info,
+#work .info{
+    width: 50%;
+}
+#education .item,
+#work .item{
+    width: 50%;
+}
+
+#education .item .diploma h3,
+#work .item .design h3{
+    font-size: 22px;
+    color: #566366;
+    text-transform: uppercase;
+    margin-top: 80px;
+}
+
+#education .item .diploma p,
+#work .item .design p{
+    font-weight: 500;
+    font-size: 18px;
+    color: #919191;
+    margin-top: 20px;
+}
+
+#education .item .diploma .gpa p,
+#work .item .design .year p{
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    background: #2ecc71;
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 11px 9px;
+}
+#education .item .diploma .gpa,
+#work .item .design .year{
+    border-bottom: 2px solid #919191;
+}
+#education .info h2,
+#work .info h2{
+    font-size: 30px;
+    color: #566366;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+}
+
+
+#education .info p,
+#work .info p{
+    font-size: 18px;
+    color: #919191;
+}
+
+
+/* my education end */
+
+/* work experiance start */
+
+#work .row{
+    padding: 100px 0;
+}
+
+/* work experiance end */
+/* john stone start */
+#john{
+    background-color: #f1f1f1;
+    text-align: center;
+}
+.stone{
+    padding: 100px 270px;
+
+}
+
+.stone p{
+    font-size: 24px;
+    color: #919191;
+}
+
+.stone h3{
+    font-size: 18px;
+    color: #566366;
+    padding: 50px 0;
+}
+
+/* john stone end */
+/* portfolio start */
+#port{
+    text-align: center;
+    padding: 100px 0;
+}
+
+#port .port_item p{
+    font-size: 18px;
+    color: #919191;
+    padding-bottom: 90px;
+}
+#port .port_item h2{
+    font-size: 30px;
+    color: #566366;
+    text-transform: uppercase;
+    padding-bottom: 52px;
+}
+.port_img .folio{
+    position: relative;
+    width: 33%;
+    padding-bottom: 20px;
+}
+
+.port_img .folio img:first-child{
+    display: block;
+}
+
+.port_img .folio img:last-child{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: #2ecc71;
+}
+.port_img .folio img:last-child{
+    opacity: 1;
+    visibility: visible;
+}
+/* portfolio end */
+/* contect start */
+#contect{
+    background-color: #252d2f;
+    padding: 100px 0;
+}
+#contect .item{
+    width: 50%;
+}
+
+#contect .item h2{
+    font-size: 30px;
+    color: #ffffff;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+}
+#contect .item p{
+    font-size: 18px;
+    color: #919191;
+}
+#contect .item p b{
+    font-size: 18;
+    font-weight: 400;
+    color: #ffffff;
+    padding-right: 48px;
+}
+
+#contect .form{
+    width: 50%;
+}
+
+#contect .form label{
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+#contect .form input,
+textarea{
+    background: #4b5456;
+    padding-right: 100px;
+}
+
+
+#contect .form a{
+    padding: 22px 38px;
+    background: #191f21;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* contect end */
+/* botom start */
+#botom{
+    background-color: #181f21;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#botom .botom_1{
+    padding-bottom: 20px;
+}
+
+#botom .botom_1,
+#botom .botom_2 a{
+    font-size: 14px;
+    font-weight: 500;
+    color: #4b5456;
+}
+/* botom end */
